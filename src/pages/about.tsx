@@ -1,6 +1,7 @@
 import { HeadFC, Link } from 'gatsby';
 import * as React from 'react';
 import Layout from '../components/layout';
+import Seo from '../components/seo';
 
 const AboutPage = () => {
     return (
@@ -12,11 +13,5 @@ const AboutPage = () => {
 
   export default AboutPage;
 
-  export const Head: HeadFC = () => {
-    return(
-        <>
-            <title>About Me</title>
-            <meta name="description" content="Your description" />
-        </>
-    )
-  }
+  export const Head: HeadFC = () => <Seo titlePage="About Mea" ></Seo>
+
