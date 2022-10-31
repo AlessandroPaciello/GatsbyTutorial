@@ -10,17 +10,19 @@ import {
   siteTitle
 } from './layout.module.scss'
 
+
+
 const Layout = ({ pageTitle, children }: any) => {
 
-    const data = useStaticQuery(graphql`
-    query MyQuery {
-      site {
-        siteMetadata {
-          title
-        }
+  const data = useStaticQuery(graphql`
+  query MyQuery {
+    site {
+      siteMetadata {
+        title
       }
     }
-    `)
+  }
+  `)
 
     return (
         <div className={container}>
