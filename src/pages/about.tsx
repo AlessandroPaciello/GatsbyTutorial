@@ -13,5 +13,5 @@ const AboutPage = () => {
 
   export default AboutPage;
 
-  export const Head: HeadFC = () => <Seo titlePage="About Mea" ></Seo>
+  export const Head: HeadFC = () => <Seo titlePage="About Me" ></Seo>
 
